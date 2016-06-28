@@ -1,0 +1,5 @@
+====================
+collective.portletpage
+====================
+
+User documentation
