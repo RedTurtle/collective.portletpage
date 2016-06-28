@@ -6,7 +6,8 @@
 collective.portletpage
 ==============================================================================
 
-Tell me what your product does
+Warning: This package is the dexterity version of Portlet Page. 
+WeIt will not be used and we'll not merge it with a PR with the original portlet page
 
 Features
 --------
