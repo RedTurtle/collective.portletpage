@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <object name="Portlet_Page" meta_type="Dexterity FTI" i18n:domain="collective.portletpage"
    xmlns:i18n="http://xml.zope.org/namespaces/i18n">
-  <property name="title" i18n:translate="">Portlet_Page</property>
+  <property name="title" i18n:translate="">Portlet Page</property>
   <property name="description"
     i18n:translate=""></property>
   <property name="icon_expr"></property>
