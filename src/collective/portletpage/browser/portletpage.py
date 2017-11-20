@@ -10,7 +10,7 @@ class Base(BrowserView):
     """
     @memoize
     def plone_view(self):
-        return getMultiAdapter((self.context, self.request), name=u"plone")
+        return getMultiAdapter((self.context, self.request), name=u"plone_layout")
 
 
 class TwoColumns(Base):
