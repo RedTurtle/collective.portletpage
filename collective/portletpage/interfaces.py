@@ -9,8 +9,6 @@ from zope.interface import Interface
 class IPortletPage(Interface):
     """Content type interface for portlet pages
     """
-    title = schema.TextLine(title=_(u"Page title"))
-    text = schema.Text(title=_(u"Body text"))
 
 
 class IPortletPageColumn(IPortletManager, IColumn):

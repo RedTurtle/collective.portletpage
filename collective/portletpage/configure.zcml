@@ -13,32 +13,20 @@
     <five:registerPackage package="." initialize=".initialize" />
 
     <genericsetup:registerProfile
-        name="portletpage"
-        title="Portlet Page Base Profile"
-        directory="profiles/base"
-        description="Base profile for Portlet page (do not install directly!)"
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        />
-
-    <genericsetup:registerProfile
         name="default"
         title="Portlet Page"
         directory="profiles/default"
         description="A Page like content with an additional section for showing portlets"
         provides="Products.GenericSetup.interfaces.EXTENSION"
-        zcml:condition="not-have plone-5"
-        />
-
-    <genericsetup:registerProfile
-        name="default"
-        title="Portlet Page"
-        directory="profiles/plone5"
-        description="A Page like content with an additional section for showing portlets"
-        provides="Products.GenericSetup.interfaces.EXTENSION"
-        zcml:condition="have plone-5"
         />
 
     <!-- Register a particular retriever for the portlets on the portlet page -->
     <adapter factory=".portlets.PortletPageRetriever" />
-
+    <permission id="collective.portletpage.AddPortletPage"
+                title="collective.portletpage: Add Portlet Page">
+        <role name="Manager"/>
+        <role name="Owner"/>
+        <role name="Contributor"/>
+        <role name="Site Administrator"/>
+    </permission>
 </configure>
