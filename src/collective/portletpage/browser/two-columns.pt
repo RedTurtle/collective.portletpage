@@ -8,8 +8,8 @@
 <body>
 
 <metal:css fill-slot="style_slot">
-  <style type="text/css" media="all"
-      tal:content="string: @import url(${context/++resource++collective.portletpage.css});"></style>
+  <link rel="stylesheet"
+      tal:attributes="href string: ${context/portal_url}/++resource++collective.portletpage.css;"/>
 </metal:css>
 
 <metal:content-core fill-slot="content-core">
