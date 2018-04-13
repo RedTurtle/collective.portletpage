@@ -13,9 +13,15 @@
 </metal:css>
 
 <metal:content-core fill-slot="content-core">
-<metal:block define-macro="content-core">
+<metal:block define-macro="content-core"
+             tal:define="toc context/table_of_contents|nothing;">
 
-  <!--div tal:condition="text" metal:use-macro="python:context.widget('text', mode='view')" /-->
+  <div id="parent-fieldname-text"
+      tal:on-error="string:"
+      tal:condition="context/text"
+      tal:content="structure python:context.text.output_relative_to(view.context)"
+      tal:attributes="class python: toc and 'pat-autotoc' or ''" />
+
 
   <div id="portletPageColumns"
       tal:define="bothColumns python:view.hasColumnFirst() and view.hasColumnSecond()">

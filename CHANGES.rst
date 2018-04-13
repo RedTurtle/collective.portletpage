@@ -2,7 +2,8 @@ Changelog
 =========
 
 
-2.0 (2016/11/08)
+2.0.1 (2018/04/13)
 ----------------
 
-- Initial release.
+- Fix problem with template and text field
+  [lucabel]
