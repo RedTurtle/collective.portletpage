@@ -4,3 +4,6 @@ from zope.interface import implements
 
 class PortletPage(Item):
     implements(IPortletPage)
+
+    portal_type = 'Portlet Page'
+    meta_type = 'PortletPage'
