@@ -12,14 +12,6 @@
       tal:content="string: @import url(${context/++resource++collective.portletpage.css});"></style>
 </metal:css>
 
-<div metal:fill-slot="javascript_head_slot" tal:omit-tag="">
-  <!-- After KSS removal we need to include this resource -->
-  <script type="text/javascript"
-      tal:condition="exists:here/++resource++manage-portlets.js"
-      tal:attributes="src string:${context/absolute_url}/++resource++manage-portlets.js">
-  </script>
-</div>
-
 <metal:title fill-slot="content-title">
   <h1 class="documentFirstHeading" i18n:translate="">
       Manage Portlet Page portlets
