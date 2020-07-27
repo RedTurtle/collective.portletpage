@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-2.0.2 (2020/07/27)
-----------------
+2.0.2arezzo (2020-07-27)
+------------------------
 
 - Fix problem with portlet page js
   [lucabel]
